@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Favicons -->
+    <link href="assets/img/favicon.png" rel="icon" />
+    <link href="assets/img/favicon.png" rel="apple-touch-icon" />
+    <!-- Google Fonts(Roboto) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Google Fonts(Open Sans) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Box Icons -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <!-- Font-Awesome-CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Pari CSS -->
+    <link rel="stylesheet" href="./beauty/pari.css" />
+    <link rel="stylesheet" href="./beauty/components/navbar-pari.css" />
+    <link rel="stylesheet" href="./beauty/layout/container.css" />
+    <link rel="stylesheet" href="./beauty/helpers/flexbox.css" />
+    <link rel="stylesheet" href="./beauty/elements/button-pari.css" />
+    <!--  -->
+    <!-- My CSS -->
+    <link rel="stylesheet" href="./My Component/style-anime.css" />
+    <link rel="stylesheet" href="./My Component/faq.css" />
+    <!--  -->
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./media_query.css" />
+
+    <!-- GSAP -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"
+      integrity="sha512-eP6ippJojIKXKO8EPLtsUMS+/sAGHGo1UN/38swqZa1ypfcD4I0V/ac5G3VzaHfDaklFmQLEs51lhkkVaqg60Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+      defer
+    ></script>
+
+    <!-- Purecounter JS -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@srexi/purecounterjs/dist/purecounter_vanilla.js"
+      defer
+    ></script>
+
+    <!-- TiltJS -->
+    <script
+      src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"
+      defer
+    ></script>
+    <script src="tilt.jquery.js" defer></script>
+    <script src="script.js" defer></script>
+    <title>LMS</title>
+  </head>
+  <body>
+    <!-- <div> -->
+    <nav class="container is-fullhd navbar-container animationFadeIn">
+      <header>
+        <img class="logo" src="./assets/img/nav-logo.png" />
+      </header>
+      <input type="checkbox" id="nav-check" />
+      <div class="nav-btn">
+        <label for="nav-check">
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
+      </div>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Products</a></li>
+        <li>
+          <details class="dropdown">
+            <summary>Traninigs & Programs</summary>
+            <ul role="nav-drop">
+              <li><a href="#">IT Sector</a></li>
+              <li><a href="#">Govt Exams</a></li>
+              <li><a href="#">Personality Development</a></li>
+              <li><a href="#">Others</a></li>
+            </ul>
+          </details>
+        </li>
+        <li><button class="primary-btn">Get Started</button></li>
+      </ul>
+    </nav>
+    <!-- </div> -->
+
+    <!-- Hero section -->
+    <div id="hero" class="">
+      <header class="hero container is-fullhd" id="hero">
+        <div class="hero-container container is-fullhd flex-center">
+          <div class="left-hero hero-img animationFadeIn">
+            <h1>We Empower you to find the right career path</h1>
+            <h3>
+              Join the Virtual Internship Program in emerging technologies with
+              CodeClause
+            </h3>
+            <div class="btn button cta outlined-btn" id="btn-theme">
+              Apply Now
+            </div>
+          </div>
+          <div class="right-hero"></div>
+        </div>
+      </header>
+    </div>
+    <!--  -->
+    <button class="fab-btn">
+      <a href="#hero"><i class="bx bx-up-arrow-alt"></i></a>
+    </button>
+
+    <!-- Features section -->
+    <section class="features">
+      <div class="features-container container is-fullhd">
+        <div class="feature">
+          <div class="feature-container flex-center">
+            <div class="icon-container">
+              <i class="bx bx-smile"></i>
+            </div>
+            <div class="feature-content">
+              <span class="number purecounter1" data-value="11495">11495</span>
+              <span class="descriptn">Happy Interns</span>
+            </div>
+          </div>
+        </div>
+        <div class="feature">
+          <div class="feature-container flex-center">
+            <div class="icon-container">
+              <i class="bx bx-book"></i>
+            </div>
+            <div class="feature-content">
+              <span class="number purecounter2" data-value="25">25</span>
+              <span class="descriptn">Total Trainers</span>
+            </div>
+          </div>
+        </div>
+        <div class="feature">
+          <div class="feature-container flex-center">
+            <div class="icon-container">
+              <i class="bx bx-group"></i>
+            </div>
+            <div class="feature-content">
+              <span class="number purecounter3" data-value="700">700</span>
+              <span class="descriptn">Abroad Interns</span>
+            </div>
+          </div>
+        </div>
+        <div class="feature">
+          <div class="feature-container flex-center">
+            <div class="icon-container">
+              <i class="bx bx-headphone"></i>
+            </div>
+            <div class="feature-content">
+              <span class="number purecounter4" data-value="24">24</span>
+              <span class="descriptn">Hours of Support</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--  -->
+
+    <!-- Description section -->
+    <section class="description">
+      <div class="description-container container is-fullhd">
+        <div class="left-description">
+          <h1>CodeClause Internship Program</h1>
+          <h3>
+            Join the Virtual Internship Program in emerging technologies with
+            CodeClause
+          </h3>
+          <button class="btn" id="btn-about">About Us &nbsp;></button>
+        </div>
+        <div class="right-description">
+          <div class="grid-description">
+            <div class="description d1">
+              <div class="icon-container">
+                <i class="bx bx-book-content"></i>
+              </div>
+              <h5>Get Certified</h5>
+              <p>
+                Get certified in your interested domain with CodeClause
+                Internship Program
+              </p>
+            </div>
+            <div class="description d2">
+              <div class="icon-container">
+                <i class="bx bx-envelope"></i>
+              </div>
+              <h5>Explore Opportunities</h5>
+              <p>
+                Explore Opportunities by CodeClause and get rewarded with Swags.
+              </p>
+            </div>
+            <div class="description d3">
+              <div class="icon-container">
+                <i class="bx bx-cube-alt"></i>
+              </div>
+              <h5>Trained by Experts</h5>
+              <p>
+                Get training by experts during internship period and
+                consultancy.
+              </p>
+            </div>
+            <div class="description d4">
+              <div class="icon-container">
+                <i class="bx bx-briefcase"></i>
+              </div>
+              <h5>Gain Experience</h5>
+              <p>
+                Gain experience in your intrested technology and add it in your
+                resume or CV.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--  -->
+
+    <!-- Testimonial -->
+    <section class="testimonials container is-fullhd">
+      <div class="testimonials-heading">
+        <h2>Testimonials</h2>
+      </div>
+      <div class="testimonials-desc">
+        <p>What people say about the internship program</p>
+      </div>
+      <div class="testimonials-container">
+        <!-- <div class="testimonial item">
+          <div class="flex-testimonial">
+            <div class="img-container">
+              <img src="./assets/img/testimonials-1.jpeg" alt="Candidate 1" />
+            </div>
+            <div class="details">
+              <h5>Isha Paul</h5>
+              <p>CodeClause Intern</p>
+            </div>
+          </div>
+          <div class="commentary">
+            <blockquote>Awesome</blockquote>
+          </div>
+        </div> -->
+        <div class="testimonial item">
+          <div class="flex-testimonial">
+            <div class="img-container">
+              <img src="./assets/img/testimonials-2.jpg" alt="Candidate 1" />
+            </div>
+            <div class="details">
+              <h5>Samiksha Madhukar Rodke</h5>
+              <!-- <p>CodeClause Intern</p> -->
+            </div>
+          </div>
+          <div class="commentary">
+            <blockquote>
+              It was my first internship and I have never ever thought about
+              that I'll receive any SWAGS in my whole life truly.... It is
+              happiest moment for me that I wanted to express but to be honest I
+              can't find words how to write.... So I just want to Thank
+              CodeClause for this Beautiful T-shirt. Thank you for trusting me
+              with the project. I could not have done it without your support.
+              You are the reason which made me deserve this price. I cannot
+              express how thankful I am for this input.
+              <footer>
+                <cite>- CodeClause Intern</cite>
+              </footer>
+            </blockquote>
+          </div>
+        </div>
+        <div class="testimonial item">
+          <div class="flex-testimonial">
+            <div class="img-container">
+              <img src="./assets/img/testimonials-3.jpeg" alt="Candidate 3" />
+            </div>
+            <div class="details">
+              <h5>Ajit Sachin Patil</h5>
+              <!-- <p>CodeClause Intern</p> -->
+            </div>
+          </div>
+          <div class="commentary">
+            <blockquote>
+              I thoroughly enjoyed my internship this summer and now have very
+              valuable experience under my belt. I know this will help when
+              looking for jobs and needing references. I was dreading it in the
+              beginning, but now I am so happy it was required.
+              <footer>
+                <cite>- CodeClause Intern</cite>
+              </footer>
+            </blockquote>
+          </div>
+        </div>
+        <div class="testimonial hidden">
+          <div class="flex-testimonial">
+            <div class="img-container">
+              <img src="./assets/img/testimonials-4.jpeg" alt="Candidate 3" />
+            </div>
+            <div class="details">
+              <h5>Mihir Rajesh Panchal</h5>
+              <p>CodeClause Intern</p>
+            </div>
+          </div>
+          <div class="commentary">
+            <blockquote>
+              It was very excellent experience working with you all.This will
+              help me for building my bright future thankyou !
+            </blockquote>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--  -->
+    <!-- <blockquote>
+      "Maecenas vehicula metus tellus, vitae congue turpis hendrerit non. Nam at
+      dui sit amet ipsum cursus ornare."
+      <footer>
+        <cite>- Phasellus eget lacinia</cite>
+      </footer>
+    </blockquote> -->
+
+    <!-- My Card Component -->
+    <section class="container is-fullhd" id="grid">
+      <div class="heading-container">
+        <h1 class=""><span class="">Why</span> Choose Us</h1>
+      </div>
+      <div class="grid-container">
+        <div class="grid grid-1">
+          <div class="img-container">
+            <img src="./My Component/assets/img-1.jpg" alt="Happy Children" />
+            <div class="skeleton-img-container">
+              <svg
+                className="w-10 h-10 text-gray-200 dark:text-gray-600"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="currentColor"
+                viewBox="0 0 20 18"
+              >
+                <path
+                  d="M18 0H2a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2Zm-5.5 4a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3Zm4.376 10.481A1 1 0 0 1 16 15H4a1 1 0 0 1-.895-1.447l3.5-7A1 1 0 0 1 7.468 6a.965.965 0 0 1 .9.5l2.775 4.757 1.546-1.887a1 1 0 0 1 1.618.1l2.541 4a1 1 0 0 1 .028 1.011Z"
+                />
+              </svg>
+            </div>
+            <div class="shadow"></div>
+            <h5><span>Empower</span>, Explore, <span>Excel</span></h5>
+            <div class="popup-container"></div>
+            <div class="popup-container-2">
+              <h2><span>Empower</span>, Explore, <span>Excel</span></h2>
+              <p>Right Mix of Curricular and Co-Curricular Activities.</p>
+            </div>
+          </div>
+        </div>
+        <div class="grid grid-2">
+          <div class="img-container">
+            <img
+              src="./My Component/assets/img-2.jpg"
+              alt="Teacher teaching students"
+            />
+            <div class="skeleton-img-container">
+              <svg
+                className="w-10 h-10 text-gray-200 dark:text-gray-600"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="currentColor"
+                viewBox="0 0 20 18"
+              >
+                <path
+                  d="M18 0H2a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2Zm-5.5 4a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3Zm4.376 10.481A1 1 0 0 1 16 15H4a1 1 0 0 1-.895-1.447l3.5-7A1 1 0 0 1 7.468 6a.965.965 0 0 1 .9.5l2.775 4.757 1.546-1.887a1 1 0 0 1 1.618.1l2.541 4a1 1 0 0 1 .028 1.011Z"
+                />
+              </svg>
+            </div>
+            <div class="shadow"></div>
+            <h5>
+              <span>Proven</span> and <span>Tested</span><br />centralised
+              curriculum
+            </h5>
+            <div class="popup-container"></div>
+            <div class="popup-container-2">
+              <h2>
+                <span>Proven</span> and <span>Tested</span><br />centralised
+                curriculum
+              </h2>
+              <p>
+                CBSE school with balanced traditional & contemporary curriculum
+                to foster growth in all its students.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="grid grid-3">
+          <div class="img-container">
+            <img
+              src="./My Component/assets/img-3.jpg"
+              alt="Students walking cheerfully"
+            />
+            <div class="skeleton-img-container">
+              <svg
+                className="w-10 h-10 text-gray-200 dark:text-gray-600"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="currentColor"
+                viewBox="0 0 20 18"
+              >
+                <path
+                  d="M18 0H2a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2Zm-5.5 4a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3Zm4.376 10.481A1 1 0 0 1 16 15H4a1 1 0 0 1-.895-1.447l3.5-7A1 1 0 0 1 7.468 6a.965.965 0 0 1 .9.5l2.775 4.757 1.546-1.887a1 1 0 0 1 1.618.1l2.541 4a1 1 0 0 1 .028 1.011Z"
+                />
+              </svg>
+            </div>
+            <div class="shadow"></div>
+            <h5><span>Voices Echo</span>, Friendships Bloom</h5>
+            <div class="popup-container"></div>
+            <div class="popup-container-2">
+              <h2><span>Voices Echo</span>, Friendships Bloom</h2>
+              <p>
+                Facilitate excellence through critical thinking and profound
+                learning.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="grid grid-4">
+          <div class="img-container">
+            <img src="./My Component/assets/img-4.jpg" alt="Happy children" />
+            <div class="skeleton-img-container">
+              <svg
+                className="w-10 h-10 text-gray-200 dark:text-gray-600"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="currentColor"
+                viewBox="0 0 20 18"
+              >
+                <path
+                  d="M18 0H2a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2Zm-5.5 4a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3Zm4.376 10.481A1 1 0 0 1 16 15H4a1 1 0 0 1-.895-1.447l3.5-7A1 1 0 0 1 7.468 6a.965.965 0 0 1 .9.5l2.775 4.757 1.546-1.887a1 1 0 0 1 1.618.1l2.541 4a1 1 0 0 1 .028 1.011Z"
+                />
+              </svg>
+            </div>
+            <div class="shadow"></div>
+            <h5><span>Enrichment</span> Program</h5>
+            <div class="popup-container"></div>
+            <div class="popup-container-2">
+              <h2><span>Enrichment</span> Program</h2>
+              <p>Regular teacher training and curriculum workshops</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--  -->
+
+    <!-- FAQ -->
+    <section class="faq container is-fullhd">
+      <div class="faq-heading">
+        <h2>Frequently Asked Questions</h2>
+      </div>
+      <div class="faq-container">
+        <div class="faqs">
+          <ul>
+            <div class="ques-container">
+              <li class="ques">What is duration of internship?</li>
+              <span><i class="fa-solid fa-chevron-down"></i></span>
+            </div>
+            <li class="ans">Duration of internship will be of 1 month.</li>
+          </ul>
+          <ul>
+            <div class="ques-container">
+              <li class="ques">What is the location of internship?</li>
+              <span><i class="fa-solid fa-chevron-down"></i></span>
+            </div>
+            <li class="ans">Internship and training will be virtually.</li>
+          </ul>
+          <ul>
+            <div class="ques-container">
+              <li class="ques">When we will get certificate, LOR and Swags?</li>
+              <i class="fa-solid fa-chevron-down"></i>
+            </div>
+            <li class="ans">
+              You will recieve your internship completion certificate and LOR
+              upto the next month 5 working days and swags will take 10 or more
+              working days to get deliver.
+            </li>
+          </ul>
+          <ul>
+            <div class="ques-container">
+              <li class="ques">
+                Which type projects we have during internship?
+              </li>
+              <i class="fa-solid fa-chevron-down"></i>
+            </div>
+            <li class="ans">
+              You will get projects/tasks related to your internship domain and
+              you will get two projects that you have to complete as a beginner
+              and other two projects are GOLDEN PROJECTS means you have to do
+              that projects on next high level.
+            </li>
+          </ul>
+          <ul>
+            <div class="ques-container">
+              <li class="ques">
+                What is eligibility criteria for Certificate, LOR and Swags?
+              </li>
+              <i class="fa-solid fa-chevron-down"></i>
+            </div>
+            <li class="ans">
+              1 Project Completion = Internship Completion Certificate 2
+              Projects Completion = Certificate + LOR 2 Projects + 1 Golden
+              Project = Certificate + LOR + Swags If your golden project
+              implementation satisfies our requirements then you are eligible
+              for swags and also training attendance will be mapped.
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <!--  -->
+
+    <!-- Footer -->
+    <footer class="footer container is-fullhd">
+      <div class="footer-container">
+        <div class="grid">
+          <div class="title">CodeClause<span>Internship</span></div>
+          <p class="address">
+            401, Shreenath Complex <br />
+            4th Floor, Near Polyhub FoodCourt <br />
+            Vadgaon Pune, India <br />
+            <br />
+            <strong>Phone:</strong> +91&nbsp;7030020973 <br />
+            <strong>Email:</strong> official@codeclause.com
+          </p>
+        </div>
+        <div class="grid grid-2">
+          <div class="title">Useful Links</div>
+          <ul>
+            <li class="underline">Home</li>
+            <li class="underline">About Us</li>
+            <li class="underline">Internship Domains</li>
+            <li class="underline">Apply Now</li>
+            <li class="underline">Terms & Conditions</li>
+          </ul>
+        </div>
+        <div class="grid grid-2">
+          <div class="title">Internship Domains</div>
+          <ul>
+            <li class="underline">Data Science</li>
+            <li class="underline">Python Development</li>
+            <li class="underline">Java Development</li>
+            <li class="underline">Web Development</li>
+            <li class="underline">Graphic Design</li>
+          </ul>
+        </div>
+        <div class="grid grid-2">
+          <div class="title">Join Our Internship</div>
+          <div class="info">
+            Join the Virtual Internship Program in emerging technologies with
+            CodeClause
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

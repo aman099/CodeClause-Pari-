@@ -1,0 +1,288 @@
+/* Media Queries */
+@media screen and (max-width: 1800px) {
+  /* Navbar section */
+  .navbar {
+    max-width: 120rem;
+  }
+
+  .navbar .navbar-container {
+    max-width: 110rem;
+  }
+
+  /* Hero section */
+  .hero .hero-container {
+    max-width: 110rem;
+  }
+}
+
+@media screen and (max-width: 1600px) {
+  /* Navbar section */
+  .navbar {
+    max-width: 95rem;
+  }
+  .navbar.sticky {
+    max-width: 95rem;
+  }
+  .navbar .navbar-container {
+    max-width: 90rem;
+  }
+  .navbar.sticky .navbar-container {
+    max-width: 90rem;
+  }
+
+  /* Hero section */
+  .hero .hero-container {
+    max-width: 100rem;
+  }
+
+  /* FAQs section */
+  .faq .faq-container .faqs ul .ques-container .ques {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  /* NavBar section */
+  .navbar .navbar-container .right .menus {
+    gap: 26px;
+  }
+  .navbar .navbar-container .right .menus .menu {
+    font-size: 14px;
+  }
+
+  /* Hero section */
+  .hero .hero-container .left-hero h1 {
+    font-size: 36px;
+  }
+  .hero .hero-container .left-hero h3 {
+    font-size: 18px;
+  }
+  .hero .hero-container #btn-theme {
+    font-size: 12px;
+    padding: 6px 24px;
+    margin-top: 22px;
+  }
+
+  .description .description-container .right-description .grid-description {
+    row-gap: 0;
+  }
+
+  /* Features section */
+  .features .features-container .feature-container .feature-content .number {
+    font-size: 33px;
+  }
+
+  /* Testimonials section */
+  .testimonials .testimonials-container {
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  /* Footer section */
+  .footer .footer-container {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 16px;
+  }
+  .footer .footer-container .grid .title {
+    font-size: 22px;
+  }
+  .footer .footer-container .grid-2 .title {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 880px) {
+  /* NavBar section */
+  .navbar .navbar-container {
+    max-width: 47.5rem;
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+  .navbar .navbar-container .right .menus .menu:not(:last-child) {
+    display: none;
+  }
+
+  .navbar .navbar-container .left .nav-logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  /* Features section */
+  .features .features-container {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  .features .features-container.visible {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    column-gap: 20px;
+  }
+
+  /* Description section */
+  .description .description-container {
+    flex-direction: column;
+  }
+  .description .description-container .left-description {
+    display: none;
+  }
+  .description .description-container .left-description.visible {
+    overflow-y: hidden;
+    display: none;
+  }
+
+  .description .description-container .right-description .grid-description .d1,
+  .description .description-container .right-description .grid-description .d2,
+  .description .description-container .right-description .grid-description .d3,
+  .description .description-container .right-description .grid-description .d4 {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  .description
+    .description-container
+    .right-description
+    .grid-description
+    .d1.visible,
+  .description
+    .description-container
+    .right-description
+    .grid-description
+    .d2.visible,
+  .description
+    .description-container
+    .right-description
+    .grid-description
+    .d3.visible,
+  .description
+    .description-container
+    .right-description
+    .grid-description
+    .d4.visible {
+    transform: translateY(0);
+    opacity: 1;
+  }
+
+  /* FAQs section */
+  .faq .faq-container .faqs ul .ques-container .ques {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  /* Navbar */
+  .navbar-container.sticky .nav-btn + ul {
+    background-color: #000;
+    color: #fff;
+  }
+
+  /* Features section */
+  .features .features-container {
+    display: block;
+    transform: translateY(0);
+  }
+
+  /* Description section */
+  .description .description-container .right-description .grid-description {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .description .description-container .right-description .grid-description .d1,
+  .description .description-container .right-description .grid-description .d2,
+  .description .description-container .right-description .grid-description .d3,
+  .description .description-container .right-description .grid-description .d4 {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  .description
+    .description-container
+    .right-description
+    .grid-description
+    .d1.visible,
+  .description
+    .description-container
+    .right-description
+    .grid-description
+    .d2.visible,
+  .description
+    .description-container
+    .right-description
+    .grid-description
+    .d3.visible,
+  .description
+    .description-container
+    .right-description
+    .grid-description
+    .d4.visible {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  /* FAQ */
+  .faq {
+    padding: 40px;
+    margin-top: 100px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  /* Hero section */
+  .hero .hero-container .right-hero {
+    display: none;
+  }
+
+  /* Footer section */
+  .footer .footer-container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  /* Navbar section */
+  .navbar-container {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  .logo {
+    width: 60px;
+  }
+  .navbar .navbar-container .left .nav-logo a {
+    font-size: 24px;
+  }
+
+  /* Hero section */
+  .left-hero {
+    flex-basis: 100%;
+  }
+  /* Features section */
+  .features .features-container {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  .description .description-container .right-description .grid-description {
+    padding: 0;
+  }
+  /* Testimonial section */
+  .testimonials .testimonials-container {
+    padding: 50px 20px;
+  }
+  .testimonials .testimonials-container .testimonial .commentary::before {
+    top: -10px;
+  }
+  .testimonials .testimonials-container .testimonial .commentary::after {
+    bottom: -36px;
+  }
+
+  /* Footer section */
+  .footer .bottom-footer .bottom-footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 16px;
+  }
+}
